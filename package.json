@@ -1,11 +1,14 @@
 {
+  "homepage": "https://godomega.github.io/petgram/",
   "name": "curso-platzi-react-avanzado",
   "version": "1.0.0",
   "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
   "main": "index.js",
   "scripts": {
     "start": "webpack --mode development && npx serve dist -s",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
   },
-  "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/plugin-transform-runtime": "^7.13.15",
@@ -23,6 +25,7 @@
     "clean-webpack-plugin": "*",
     "css-loader": "^5.2.4",
     "dotenv-webpack": "^7.0.2",
+    "gh-pages": "^3.1.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
