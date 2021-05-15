@@ -7,10 +7,6 @@
     "start": "webpack --mode development && npx serve dist -s",
     "build": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
