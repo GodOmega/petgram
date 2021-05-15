@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const DotenvWebpackPlugin = require("dotenv-webpack");
 const WebpackPwaManifestPlugin = require("webpack-pwa-manifest");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 module.exports = {
@@ -51,7 +50,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "assets/[name].css",
     }),
-    new DotenvWebpackPlugin(),
     new WebpackPwaManifestPlugin({
       name: "PetGram - Tu app de fotos de mascotas",
       short_name: "Petgram 🐶",
